@@ -1,0 +1,146 @@
+doctype html
+html(lang='ru')
+  head
+    meta(http-equiv='Content-Type' content='text/html; charset=UTF-8')
+    title WD
+    link(href='styles.css' type='text/css' media='screen' rel='stylesheet')
+  ul.nav__menu--small
+    li(onclick="document.querySelector('.nav__menu--small').style.display = 'none';")
+      a.nav__menu--item(href='#callback') Главная
+    li(onclick="document.querySelector('.nav__menu--small').style.display = 'none';")
+      a.nav__menu--item(href='#aboutMe') Об&nbsp;авторе
+    li(onclick="document.querySelector('.nav__menu--small').style.display = 'none';")
+      a.nav__menu--item(href='#projects') Работы
+    li(onclick="document.querySelector('.nav__menu--small').style.display = 'none';")
+      a.nav__menu--item(href='#working') Процесс
+    li(onclick="document.querySelector('.nav__menu--small').style.display = 'none';")
+      a.nav__menu--item(href='#connect') Контакты
+  .headerNav
+    header
+      h1.logo WD
+    nav
+      ul.nav__menu
+        li
+          a.nav__menu--item(href='#callback') Главная
+        li
+          a.nav__menu--item(href='#aboutMe') Об&nbsp;авторе
+        li
+          a.nav__menu--item(href='#projects') Работы
+        li
+          a.nav__menu--item(href='#working') Процесс
+        li
+          a.nav__menu--item(href='#connect') Контакты
+      p.headerNav__menu(onclick="document.querySelector('.nav__menu--small').style.display = 'block';") &Mcy;&iecy;&ncy;&yucy;
+  main
+    section#callback
+      img.computer(src='images/computer.png' alt='Computer')
+      article.callback
+        h2.design Дизайн и верстка
+        p
+          | Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.
+    section#aboutMe
+      h3 Обо мне
+      article
+        p
+          | Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.
+    section#projects
+      .project
+        img.project--img(src='images/project.png' alt='Project')
+        p
+          | 40+
+          br
+          | проектов
+      .project
+        img.project--img(src='images/project.png' alt='Project')
+        p
+          | 40+
+          br
+          | проектов
+      .project
+        img.project--img(src='images/project.png' alt='Project')
+        p
+          | 40+
+          br
+          | проектов
+      .project
+        img.project--img(src='images/project.png' alt='Project')
+        p
+          | 40+
+          br
+          | проектов
+      .project
+        img.project--img(src='images/project.png' alt='Project')
+        p
+          | 40+
+          br
+          | проектов
+      .project
+        img.project--img(src='images/project.png' alt='Project')
+        p
+          | 40+
+          br
+          | проектов
+    section#skills
+      .skills__block
+        h3.skills Мои навыки
+        .progress_group
+          label.skill(for='skill--item') Adobe Photoshop
+          br
+          progress.skill--item(value='79' max='100')
+          br
+        .progress_group
+          label.skill(for='skill--item') Adobe Photoshop
+          br
+          progress.skill--item(value='79' max='100')
+          br
+        .progress_group
+          label.skill(for='skill--item') Adobe Photoshop
+          br
+          progress.skill--item(value='79' max='100')
+          br
+      img.photo(src='images/photo.png' alt='Photo')
+    section#working
+      h3.working Как я работаю
+      p
+        | Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.
+      video(autoplay='' muted='')
+        source(src='https://www.w3schools.com/html/movie.mp4' type='video/mp4')
+        |                     Your browser does not support the video tag.
+    section#portfolio
+      img.notes(src='images/notes.png' alt='Sheet')
+      img.laptop(src='images/laptop.png' alt='Laptop')
+      img.notes(src='images/notes.png' alt='Sheet')
+      img.laptop(src='images/laptop.png' alt='Laptop')
+      img.laptop(src='images/laptop.png' alt='Laptop')
+      img.notes(src='images/notes.png' alt='Sheet')
+      img.laptop(src='images/laptop.png' alt='Laptop')
+      img.notes(src='images/notes.png' alt='Sheet')
+    section#windows
+      img.microsoft(src='images/microsoft.png' alt='Microsoft')
+      img.microsoft(src='images/microsoft.png' alt='Microsoft')
+      img.microsoft(src='images/microsoft.png' alt='Microsoft')
+      img.microsoft(src='images/microsoft.png' alt='Microsoft')
+    section#connect
+      h3 Хотите веб-сайт?
+      p
+        | Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.
+      form(action='#')
+        label(for='name')
+        input#name(type='text' placeholder='Ваше имя' required='')
+        label(for='email')
+        input#email(type='email' placeholder='Ваш email' required='')
+        br
+        br
+        textarea(rows='10' cols='30' placeholder='Сообщение' required='')
+        br
+        br
+        input.form__submit(type='submit' value='Отправить')
+  footer
+    footer
+      .VK
+        img.vk(src='images/vk-social-network-logo.png' alt='VK')
+        img.vk(src='images/vk-social-network-logo.png' alt='VK')
+        img.vk(src='images/vk-social-network-logo.png' alt='VK')
+      .author
+        p DM;
+        p &copy; 2021. Все права защищены.

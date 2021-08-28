@@ -1,0 +1,399 @@
+/* Шрифты */
+@font-face {
+	src: url("fonts/revalia.regular.ttf") format("truetype");
+	font-family: Revalia;
+}
+@font-face {
+	src: url("fonts/Roboto.ttf") format("truetype");
+	font-family: Roboto;
+}
+
+/* Переменные */
+
+$white: white;
+$aboutWhite: #EEEFF1;
+$aboutBlue: #34547A;
+$aboutGrey: #727272;
+$maybeWGrey: #E5E5E5;
+
+@mixin placeholder {
+	::-webkit-input-placeholder {@content}
+	:-moz-placeholder           {@content}
+	::-moz-placeholder          {@content}
+	:-ms-input-placeholder      {@content}  
+  }
+
+* {
+	margin: 0;
+	padding: 0;
+}
+.nav__menu--small {
+	display: none;
+	background-color: $aboutWhite;
+}
+.headerNav__menu {
+	display: none;
+	text-transform: uppercase;
+	&:hover {
+		color: $aboutBlue;
+	}
+}
+.computer {
+	display: block;
+	padding-left: 25.4%;
+}
+.project--img {
+	display: block;
+}
+.photo {
+	display: block;
+	padding-left: 7.7%;
+	width: 29%;
+}
+.notes {
+	display: block;
+	width: 24.3%;
+}
+.laptop {
+	display: block;
+	width: 24.3%;
+}
+.microsoft {
+	display: block;
+	padding-right: 2%;
+}
+.headerNav {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	padding-top: 2.3%;
+	background-color: $aboutWhite;
+}
+.nav__menu {
+	display: flex;
+	>li {
+		margin-right: 10%;
+	}
+}
+#callback {
+	display: flex;
+	align-items: flex-start;
+	padding: 7.9% 0;
+	background-color: $aboutWhite;
+}
+.project {
+	display: flex;
+	align-items: flex-end;
+	padding-right: 4.5%;
+	>p {
+		padding-left: 15%;
+		color: $white;
+	}
+}
+#projects {
+	display: flex;
+	padding: 5.3% 0 5% 21.1%;
+	background-color: $aboutBlue;
+}
+#skills {
+	display: flex;
+	padding: 5.3% 0;
+	background-color: $maybeWGrey;
+}
+#portfolio {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	background-color: $maybeWGrey;
+}
+#windows {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 5.1% 0 5.24% 21%;
+	background-color: $maybeWGrey;
+}
+footer {
+	display: flex;
+	align-items: center;
+	flex-direction: row-reverse;
+	padding: 1.5% 0 2% 0;
+	margin: auto;
+	background-color: $aboutBlue;
+	>div {
+		>p {
+			color: $white;
+		}
+	}
+}
+#aboutMe {
+	text-align: center;
+	padding-top: 6%;
+	background-color: $maybeWGrey;
+	>article {
+		>p {
+			margin: auto;
+			width: 27%;
+			padding: 2.1% 0 4.86% 0;
+		}
+	}
+}
+#connect {
+	text-align: center;
+	padding-top: 5.2%;
+	background-color: $aboutWhite;
+	>p {
+		margin: auto;
+		padding: 2% 0 3% 0;
+		width: 30%;
+	}
+}
+header {
+	padding-left: 20.6%;
+}
+nav {
+	padding-left: 20.6%;
+}
+.callback {
+	padding-left: 6.8%;
+	>p {
+		width: 60%;
+		margin: 4.7% 0 5.5% 0;
+	}
+}
+.design {
+	margin-top: -2.4%;
+}
+.letter {
+	padding: 2.3% 4%;
+	text-transform: uppercase;
+	color: $white;
+	background-color: $aboutBlue;
+	font-size: 16px;
+	letter-spacing: 0.1em;
+}
+.skills__block {
+	padding: 5.3% 0 0 20.1%;
+	>h3 {
+		padding-bottom: 9.3%;
+	}
+}
+.progress_group {
+	padding-bottom: 5.9%;
+}
+#working {
+	text-align: center;
+	padding: 5% 0;
+	background-color: $aboutWhite;
+	>p {
+		margin: auto;
+		width: 26%;
+		padding: 2.1% 0 2.6% 0;
+	}
+}
+#name {
+	padding: 1% 0 1% 1%;
+	width: 12.6%;
+}
+#email {
+	padding: 1% 0 1% 1%;
+	width: 12.6%;
+}
+textarea {
+	padding: 0.8% 0 0 1%;
+	margin-top: 0.1%;
+	margin-bottom: 1.8%;
+	width: 26.5%;
+	border: none;
+	resize: none;
+}
+.form__submit {
+	padding: 1% 2.3%;
+	margin-bottom: 5.3%;
+	text-transform: uppercase;
+	color: $white;
+	background-color: $aboutBlue;
+	font-size: 14px;
+	letter-spacing: 0.15em;
+}
+.skill--item {
+	width: 446px;
+}
+video {
+	width: 41.5%;
+}
+li {
+	list-style-type: none;
+}
+.nav__menu--item {
+	color: black;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-family: Roboto;
+	font-size: 16px;
+	letter-spacing: 0.1em;
+	&:hover {
+		color: $aboutBlue;
+	}
+}
+input {
+	border: none;
+}
+.logo {
+	color: $aboutBlue;
+	font-family: Revalia;
+	font-size: 57.6px;
+}
+p {
+	color: $aboutGrey;
+	font-family: Roboto;
+	font-size: 16px;
+	line-height: 26px;
+}
+.skill {
+	color: $aboutGrey;
+	font-family: Roboto;
+	font-size: 16px;
+	line-height: 26px;
+}
+@include placeholder {
+	color: #5F5D5D;
+	font-family: Roboto;
+}
+h2 {
+	font-family: Roboto;
+	font-weight: 500;
+	font-size: 48px;
+}
+h3 {
+	font-family: Roboto;
+	font-weight: 500;
+	font-size: 32px;
+}
+button {
+	font-family: Roboto;
+}
+@media (max-width: 1000px) {
+	body {
+		width: 100%;
+	}
+	.nav__menu--small {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		text-align: center;
+		>li {
+			padding: 5% 0;
+		}
+	}
+	.headerNav__menu {
+		display: block;
+	}
+	.callback {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: 2% 0;
+	}
+	.headerNav {
+		flex-direction: column;
+		justify-content: center;
+		padding: 0;
+	}
+	#callback {
+		flex-direction: column;
+		align-items: center;
+		padding: 2% 0;
+	}
+	#projects {
+		flex-direction: column;
+		align-items: center;
+		padding: 2% 0;
+	}
+	#skills {
+		flex-direction: column;
+		align-items: center;
+	}
+	footer {
+		flex-direction: column;
+		align-items: center;
+		>div {
+			text-align: center;
+		}
+	}
+	.nav__menu {
+		justify-content: center;
+		display: none;
+	}
+	.computer {
+		padding: 0;
+	}
+	header {
+		padding: 2% 0;
+	}
+	nav {
+		padding: 2% 0;
+	}
+	h1 {
+		padding: 2% 0;
+	}
+	h2 {
+		padding: 2% 0;
+	}
+	p {
+		padding: 2% 0;
+		margin: 0 !important;
+		width: 95% !important;
+	}
+	.project {
+		padding: 2% 0;
+		>p {
+			padding: 0 2%;
+		}
+	}
+	.skills__block {
+		padding: 2% 0;
+	}
+	.photo {
+		padding: 2% 0;
+		margin: 0 !important;
+		width: 95% !important;
+	}
+	#windows {
+		padding: 2% 0;
+	}
+	.microsoft {
+		padding: 2% 0;
+		width: 50%;
+	}
+	form {
+		padding: 2% 0;
+	}
+	video {
+		margin: 0 !important;
+		width: 95% !important;
+	}
+	.notes {
+		margin: 0 !important;
+		width: 95% !important;
+	}
+	.laptop {
+		margin: 0 !important;
+		width: 95% !important;
+	}
+	input {
+		margin: 0 !important;
+		width: 95% !important;
+	}
+	textarea {
+		margin: 0 !important;
+		width: 95% !important;
+	}
+	#name {
+		margin-bottom: 1% !important;
+	}
+	.form__submit {
+		padding: 2%;
+	}
+}
